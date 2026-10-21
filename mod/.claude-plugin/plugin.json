@@ -1,0 +1,11 @@
+{
+  "name": "board",
+  "version": "0.1.0",
+  "description": "The shared task board in a pane and the status line, from the board MCP server",
+  "author": { "name": "Peder Holdgaard Pedersen" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "mcpServers": {
+    "board": { "type": "http", "url": "${BOARD_URL:-http://localhost:3001/mcp}" }
+  }
+}

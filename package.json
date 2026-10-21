@@ -1,0 +1,14 @@
+{
+  "name": "board-starter",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "A task board shared by an MCP App in claude.ai and a Claude Code mod in the terminal",
+  "workspaces": ["server"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "npm start -w server",
+    "build": "npm run build -w server",
+    "check": "npm run build -w server && claude plugin validate mod && claude plugin test mod"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Board</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; padding: 12px; }
+      #columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .column { border-radius: 8px; padding: 8px; background: rgba(127, 127, 127, 0.1); }
+      .column h3 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; opacity: 0.7; }
+      .card { border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; background: rgba(127, 127, 127, 0.15); font-size: 14px; }
+      .card .moves { display: flex; gap: 4px; margin-top: 4px; }
+      .card button { font-size: 12px; }
+      form { display: flex; gap: 6px; margin-top: 10px; }
+      form input { flex: 1; }
+      #status { font-size: 12px; opacity: 0.6; margin-top: 6px; }
+    </style>
+  </head>
+  <body>
+    <div id="columns"></div>
+    <form id="add">
+      <input id="title" placeholder="New card" autocomplete="off" />
+      <button type="submit">Add</button>
+    </form>
+    <div id="status">Connecting…</div>
+    <script type="module" src="/app/mcp-app.ts"></script>
+  </body>
+</html>
