@@ -67,6 +67,7 @@ Port 3001 taken? `PORT=3002 npm start`, then
 | `mod/hooks/register.tsx` | The mod: the `/board` command, the pane, the status line, polling |
 | `mod/tests/` | Tests for the mod, run by `claude plugin test` |
 | `docs/` | [Making it public](docs/tunnel.md) and [gotchas](docs/gotchas.md) |
+| `STUCK.md` | What to do when something doesn't work |
 
 Your editor's types for the mod appear in `mod/.claude-plugin/types/` the first time
 Claude Code loads it.
@@ -78,6 +79,29 @@ npm run check
 ```
 
 This type-checks and builds the server and the App, then validates and tests the mod.
+
+Stuck at any point? See [STUCK.md](STUCK.md).
+
+## Let your Claude do the typing
+
+You don't need to know how to write an MCP server, an MCP App or a mod by hand. You need
+to know what to ask. Some starting points:
+
+- "Explain how `server/server.ts` and `mod/hooks/register.tsx` talk to each other."
+- "Load the `plugin-authoring` skill, then add `/board add <title>` to the mod."
+- "Add a `delete_card` tool and a delete button in the App, then run `npm run check`."
+
+Skills that help:
+
+- **Mods:** Claude Code's built-in `plugin-authoring` skill. It writes the full mod API
+  types for your Claude Code version, with examples.
+- **MCP Apps:** the `mcp-apps` plugin from the MCP Apps repo, with skills such as
+  `create-mcp-app` and `add-app-to-server`:
+
+  ```
+  /plugin marketplace add modelcontextprotocol/ext-apps
+  /plugin install mcp-apps@mcp-apps
+  ```
 
 ## Then what
 

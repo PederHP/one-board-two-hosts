@@ -1,8 +1,11 @@
 # Challenges
 
 Pick a side, change it, and watch the other side react. Warm-ups take 10–15 minutes;
-the rest are open-ended. Your own Claude is a good pair: point it at this repo and the
-file you're changing.
+the rest are open-ended. Let your Claude do the typing: the README's "Let your Claude
+do the typing" section has prompts and skills to start from. No tunnel? See
+[STUCK.md](STUCK.md).
+
+At the end of the loop the room shares what worked, so keep notes on what surprised you.
 
 ## App track (claude.ai)
 

@@ -5,7 +5,8 @@ claude.ai reaches MCP servers from the internet, so it can't see `localhost`. A
 the tunnel runs. No Cloudflare account needed.
 
 Your own Claude can help with any of these steps. If you have your own VPS or web server,
-you can deploy the server there instead.
+you can deploy the server there instead. Can't run a tunnel at all? See
+[STUCK.md](../STUCK.md) for other ways in.
 
 ## 1. Install cloudflared
 
